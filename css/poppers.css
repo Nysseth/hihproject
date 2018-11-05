@@ -1,0 +1,123 @@
+@media only screen and (max-width: 699px) {
+    .content {
+       /* MAŁE */ 
+      padding: 15vh 7vw;
+      height: 700px;
+      /* height: 900px;  obrazki shown*/
+    }
+  
+    .content__text {
+      padding: 3vh 5vw;
+    }
+
+    .content__image {
+    }
+  }
+  
+  @media only screen and (min-width: 700px) and (max-width: 999px) {
+    .content {
+       /* ŚREDNIE */ 
+      padding: 20vh 7vw;
+      height: 600px;
+      /* height: 1050px; obrazki shown*/
+    }
+  
+    .content__text {
+      padding: 3vh 10vw;
+    }
+
+    .content__image {
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .content {
+      /* DUŻE */
+      display: flex;
+      padding: 10vh 5vw;
+      height: 300px;
+      /*  height: 601px;  Obrazki shown5*/
+      
+    }
+  
+    .content__text {
+      padding: 2vh 2vw;
+    }
+
+    .content__image {
+    }
+  }
+
+.parallax {
+    background-image: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url("../img/8.jpg");
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    background-repeat: repeat, repeat;
+    background-size: cover, cover;
+    background-attachment: scroll;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+  transition: all 1s;
+}
+
+.content__photo-btn {
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 500px;
+  border: 1px solid white;
+  background-color: #fff;
+  color: black;
+  width: 150px;
+  height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.content__image {
+  margin-top: 20px;
+  width: 25vw;
+}
+
+.color-pick {
+  width: 130px;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1px;
+}
+
+.color-pick__square {
+  width: 50px;
+  height: 50px;
+}
+
+.color-pick__default {
+  background: rgba(240, 240, 240, 1);
+}
+
+.color-pick__optional {
+  background: rgba(23, 48, 28, 1);
+}
+
+.popup-overlay {
+  visibility:hidden;
+}
+  
+  .popup-content {
+  visibility:hidden;
+}
+
+.popup-overlay.active{
+    visibility:visible;
+}
+    
+.popup-content.active {
+    visibility:visible;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Popping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+</head>
+<body>
+
+    <div class="login__modal" title="Taaak">Tak</div>
+
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__hamburger" id="navigation__hamburger">
+        <label class="hamburger__button" for="navigation__hamburger">
+            <span class="hamburger__stripes stripe__first"></span>
+            <span class="hamburger__stripes
+            stripe__second"></span>
+            <span class="hamburger__stripes stripe__third"></span>
+        </label>        
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__modal">Login</a></li> 
+                <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link navigation__link--active">Popping</a></li>
+                <li class="navigation__item"><a href="styles.html" class="navigation__link">Style</a></li>
+                <li class="navigation__item__sub"><a href="styles.html#popping" class="navigation__link">Popping</a></li>
+                <li class="navigation__item__sub"><a href="styles.html#waving" class="navigation__link">Waving</a></li>
+                <li class="navigation__item"><a href="poppers.html" class="navigation__link">Tancerze</a></li>
+                <li class="navigation__item"><a href="gallery.html" class="navigation__link">Galeria</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="parallax"></div>
+
+    <header class="header">
+            <div id="header__logo"></div>
+    </header>
+    
+    <div class="wrapper">
+        <div class="header__text-box">
+                <h1 class="heading__first">
+                    <span class="heading__first--main">Popping</span>
+                    <span class="heading__first--sub">Feel the funk</span>
+                </h1>
+                <a href="#content" class="btn btn--white smooth-scroll"><span class="heading__second">Chce wiedzieć więcej</span></a>
+                
+        </div>
+        <main id="content" class="content">
+                <p class="content__text">
+                    Popping to taniec uliczny, należący do stylów hip-hopowych, pochodzący głównie z Fresno, California, powstały w latach 60-tych.
+                </p>
+                <p class="content__text">
+                    Muzyka, z którą Popping jest najbardziej identyfikowany jest funk, aczkolwiek z czasem zaczęto tańczyć również do innych gatunków, jak g-funk, rap, a nawet muzyka elektroniczna.
+                </p>
+                <p class="content__text">
+                    Popping jest bardzo charakterystycznym tańcem z kilku względów. Jednym z nich jest jego dwuznaczność. Popping jest nazwą całego tańca, a zarazem nazwą jednego z jego podstyli tanecznych. Drugą rzeczą, która uszczególnia ten styl to sposób poruszania się tancerzy, który dzieli się na <a href="styles.html" class="content__text__link">style</a>.
+                </p>
+            </main>
+        <footer class="footer">
+            <form action="mailto:someone@example.com" method="post">
+                <table class="contact__table">
+                    <tr class="table__row">
+                        <td class="table__cell">
+                            <input class="input--name" type="text" name="name" placeholder="Imię">
+                        </td>
+                        <td>
+                            <input class="input--mail" type="text" name="mail" placeholder="E-mail">
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell" colspan="2">
+                            <input class="input--text" type="text" name="comment"
+                            placeholder="Wiadomość">
+                        </td>
+                    </tr>
+                </table>
+                <p class="footer__copyright">&copy; 2018 Krzysztof Zajączkowski</p>
+            </form>
+            
+        </footer>   
+    </div>
+    
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

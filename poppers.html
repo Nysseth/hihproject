@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Popping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/poppers.css" />
+    <noscript>
+        <style type=text/css">
+            .content__photo-btn {
+                display: none;
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+
+    <div class="modal__smoke"></div>
+    <div class="login__modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <form class="modal__form">
+                    <label class="label--login" for="login">Login</label>
+                    <input class="input--login" type="text" name="login" placeholder="Login">
+                    <label class="label--password" for="password">Password</label>
+                    <input class="input--password" type="password" name="password" placeholder="Hasło">
+            </form>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__hamburger" id="navigation__hamburger">
+        <label class="hamburger__button" for="navigation__hamburger">
+            <span class="hamburger__stripes stripe__first"></span>
+            <span class="hamburger__stripes
+            stripe__second"></span>
+            <span class="hamburger__stripes stripe__third"></span>
+        </label>        
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__modal">Login</a></li> 
+                <li class="navigation__item"><a href="index.html" class="navigation__link">Popping</a></li>
+                <li class="navigation__item"><a href="styles.html" class="navigation__link">Style</a></li>
+                <li class="navigation__item__sub"><a href="styles.html#popping" class="navigation__link">Popping</a></li>
+                <li class="navigation__item__sub"><a href="styles.html#waving" class="navigation__link">Waving</a></li>
+                <li class="navigation__item navigation__item--active"><a href="poppers.html" class="navigation__link navigation__link--active">Tancerze</a></li>
+                <li class="navigation__item"><a href="gallery.html" class="navigation__link">Galeria</a></li>
+                <li class="navigation__item color-pick">
+                    <div class="color-pick__square color-pick__default"></div>
+                    <div class="color-pick__square color-pick__optional"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="parallax"></div>
+
+    <header class="header">
+            <div id="header__logo"></div>
+    </header>
+    
+    <div class="wrapper">
+        <div class="header__text-box">
+                <h1 class="heading__first">
+                    <span class="heading__first--sub">Poppers</span>
+                </h1>
+                <a href="#content" class="btn btn--white smooth-scroll"><span class="heading__second">Chce wiedzieć więcej</span></a>
+                
+        </div>
+        <main id="content" class="content">
+                <div class="content__text">
+                    <span class="content__photo-btn">Pokaż zdjęcia</span>
+                    <p>Boogaloo Sam to jeden z tancerzy, którzy stworzyli Popping. Zainspirował się stylem zwanym Locking i na jego podstawie stworzył nowy.</p>
+                    <img class="content__image" src="img/boogaloosam.png">
+                </div>
+                <div class="content__text">
+                    <p>Jednym z popularniejszych tancerzy tego stylu jest <a href="https://en.wikipedia.org/wiki/Popin%27_Pete">Popin' Pete</a>, brat Boogaloo Sama, który uczył się wraz z nim.</p>
+                    <img class="content__image" src="img/popinpete.jpg">
+                </div>
+                <div class="content__text">
+                    <p>Pierwszą formacją tancerzy Poppingowych było utworzone przez wspomnianych braci Electric Boogaloos, które oficjalnie utworzyło i rozpromowało styl zwany Poppingiem.</p>
+                </div>
+            </main>
+        <footer class="footer">
+                <p class="footer__copyright">&copy; 2018 Krzysztof Zajączkowski</p>
+        </footer>
+    </div>
+    
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/poppers.js"></script>
+</body>
+</html>

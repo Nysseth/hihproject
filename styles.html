@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Popping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/gallery.css" />
+</head>
+<body>
+
+    <div class="login__modal" title="Taaak">Tak</div>
+
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__hamburger" id="navigation__hamburger">
+        <label class="hamburger__button" for="navigation__hamburger">
+            <span class="hamburger__stripes stripe__first"></span>
+            <span class="hamburger__stripes
+            stripe__second"></span>
+            <span class="hamburger__stripes stripe__third"></span>
+        </label>        
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__modal">Login</a></li> 
+                <li class="navigation__item"><a href="index.html" class="navigation__link">Popping</a></li>
+                <li class="navigation__item navigation__item--active"><a href="styles.html" class="navigation__link navigation__link--active">Style</a></li>
+                <li class="navigation__item__sub"><a href="#popping" class="navigation__link smooth-scroll">Popping</a></li>
+                <li class="navigation__item__sub"><a href="#waving" class="navigation__link smooth-scroll">Waving</a></li>
+                <li class="navigation__item"><a href="poppers.html" class="navigation__link">Tancerze</a></li>
+                <li class="navigation__item"><a href="gallery.html" class="navigation__link">Galeria</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="parallax"></div>
+
+    <header class="header">
+            <div id="header__logo"></div>
+    </header>
+    
+    <div class="wrapper">
+        <div class="header__text-box">
+                <h1 class="heading__first">
+                    <span class="heading__first--main">Popping</span>
+                    <span class="heading__first--sub">Styles</span>
+                </h1>
+                <a href="#content" class="btn btn--white smooth-scroll"><span class="heading__second">Chce wiedzieć więcej</span></a>
+                
+        </div>
+        <main id="content" class="content">
+                <p class="content__text">
+                    Popping składa się z niezliczonej ilości stylów, a kolejne z nich są wciąż wymyślane przez top-owych tancerzy, jednak można wyróżnić dwa,które są dla osób z zewnątrz najbardziej rozpoznawalne.
+                </p>
+                <p id="popping" class="content__text">
+                    Pierwszy z nich to <a href="https://pl.wikipedia.org/wiki/Popping">Popping</a>(tu właśnie pojawia się ta dwuznaczność), który polega na szybkim spięciu i rozluźnieniu mięśni w rytm muzyki.
+                </p>
+                <p id="waving" class="content__text">
+                   Drugi styl nazywa sie Waving, jak sama nazwa wskazuje, polega on na imitowaniu fali przepływającej przez ciało tancerza w dowolnej formie/prędkości/kierunku.
+                </p>
+        </main>
+        <section class="gallery">
+                <div class="gallery__row">
+                    <div class="gallery__item"><img class="gallery__image" src="img/1.jpg" alt="Animation" onclick="changeImg(this)"></div>
+                    <div class="gallery__item"><img class="gallery__image" src="img/2.jpg" alt="Dance Battle" onclick="changeImg(this)"></div>
+                    <div class="gallery__item"><img class="gallery__image" src="img/3.jpg" alt="Showcase" onclick="changeImg(this)"></div>
+                    <div class="gallery__item"><img class="gallery__image" src="img/4.jpg" alt="Popping" onclick="changeImg(this)"></div>
+                    <div class="gallery__item"><img class="gallery__image" src="img/5.jpg" alt="Waving" onclick="changeImg(this)"></div>
+                </div>
+                <div class="gallery__main">
+                    <!--<span class="gallery__hide" onclick="this.parentElement.style.display='none'">&times;</span>-->
+                    <img class="gallery__expanded" src="img/1.jpg">
+                    
+                </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">&copy; 2018 Krzysztof Zajączkowski</p>
+        </footer>
+    </div>
+    
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
