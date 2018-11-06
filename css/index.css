@@ -1,8 +1,8 @@
 @media only screen and (max-width: 699px) {
     .content {
        /* MAŁE */ 
-      padding: 10vh 7vw;
-      height: 700px;
+      padding: 13vh 7vw;
+      height: 800px;
     }
   
     .content__text {
