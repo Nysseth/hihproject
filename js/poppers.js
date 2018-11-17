@@ -12,16 +12,24 @@ photoButtons.forEach(function(el) {
     el.addEventListener("click",function() {
         var content = document.querySelector(".content");
         var variable = false;
-        if(content.offsetHeight == 700) {
-            content.style.height = "900px";
+        if(content.offsetHeight == 1100) {
+            content.style.height = "1300px";
             variable = true;
         }
-        if(content.offsetHeight == 600) {
+        if(content.offsetHeight == 900) {
+            content.style.height = "1150px";
+            variable = true;
+        }
+        if(content.offsetHeight == 850) {
             content.style.height = "1050px";
             variable = true;
         }
-        if(content.offsetHeight == 300) {
-            content.style.height = "601px";
+        if(content.offsetHeight == 700) {
+            content.style.height = "950px";
+            variable = true;
+        }
+        if(content.offsetHeight == 400) {
+            content.style.height = "600px";
             variable = true;
         }
         if(variable) {
