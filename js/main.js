@@ -38,8 +38,26 @@ var dialog = $( ".login__modal" ).dialog({
 });
 $( ".navigation__modal" ).click(function() {
     dialog.dialog( "open" );
+    $( ".modal__smoke").css("display","block");
 });
 
 $( ".modal__close").click(function() {
     dialog.dialog( "close" );
+    $( ".modal__smoke").css("display","none");
 })
+
+$( ".btn--login").click(function() {
+    dialog.dialog( "close" );
+    $( ".modal__smoke").css("display","none");
+})
+
+$( ".btn--cancel").click(function() {
+    dialog.dialog( "close" );
+    $( ".modal__smoke").css("display","none");
+})
+
+$( ".jq--disabled-link").removeAttr("href");
+
+$( ".jq--disabled-link").click(function(e) {
+    e.preventDefault();
+});

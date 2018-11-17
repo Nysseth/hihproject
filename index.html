@@ -8,10 +8,32 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <noscript>
+            <style type=text/css">
+                .navigation__modal {
+                text-decoration: line-through;
+                }
+            </style>
+    </noscript>
 </head>
 <body>
 
-    <div class="login__modal" title="Taaak">Tak</div>
+    <div class="modal__smoke"></div>
+    <div class="login__modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <form class="modal__form">
+                    <label class="label--login" for="login">Login</label>
+                    <input class="input--login" type="text" name="login" placeholder="Login">
+                    <label class="label--password" for="password">Password</label>
+                    <input class="input--password" type="password" name="password" placeholder="Hasło">
+                    <div class="form__btns">
+                        <button class="form__btns__btn btn--white btn--login">Login</button>
+                        <button class="form__btns__btn btn--white btn--cancel">Anuluj</button>
+                    </div>
+            </form>
+        </div>
+    </div>
 
 
     <div class="navigation">
@@ -31,7 +53,7 @@
                 <li class="navigation__item__sub"><a href="styles.html#popping" class="navigation__link">Popping</a></li>
                 <li class="navigation__item__sub"><a href="styles.html#waving" class="navigation__link">Waving</a></li>
                 <li class="navigation__item"><a href="poppers.html" class="navigation__link">Tancerze</a></li>
-                <li class="navigation__item"><a href="gallery.html" class="navigation__link">Galeria</a></li>
+                <li class="navigation__item jq--disabled-link"><a href="gallery.html" class="navigation__link">Galeria</a></li>
             </ul>
         </nav>
     </div>

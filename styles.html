@@ -12,7 +12,22 @@
 </head>
 <body>
 
-    <div class="login__modal" title="Taaak">Tak</div>
+        <div class="modal__smoke"></div>
+        <div class="login__modal">
+            <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <form class="modal__form">
+                        <label class="label--login" for="login">Login</label>
+                        <input class="input--login" type="text" name="login" placeholder="Login">
+                        <label class="label--password" for="password">Password</label>
+                        <input class="input--password" type="password" name="password" placeholder="Hasło">
+                        <div class="form__btns">
+                            <button class="form__btns__btn btn--white btn--login">Login</button>
+                            <button class="form__btns__btn btn--white btn--cancel">Anuluj</button>
+                        </div>
+                </form>
+            </div>
+        </div>
 
 
     <div class="navigation">
@@ -32,7 +47,7 @@
                 <li class="navigation__item__sub"><a href="#popping" class="navigation__link smooth-scroll">Popping</a></li>
                 <li class="navigation__item__sub"><a href="#waving" class="navigation__link smooth-scroll">Waving</a></li>
                 <li class="navigation__item"><a href="poppers.html" class="navigation__link">Tancerze</a></li>
-                <li class="navigation__item"><a href="gallery.html" class="navigation__link">Galeria</a></li>
+                <li class="navigation__item jq--disabled-link"><a href="gallery.html" class="navigation__link">Galeria</a></li>
             </ul>
         </nav>
     </div>
@@ -71,12 +86,28 @@
                     <div class="gallery__item"><img class="gallery__image" src="img/5.jpg" alt="Waving" onclick="changeImg(this)"></div>
                 </div>
                 <div class="gallery__main">
-                    <!--<span class="gallery__hide" onclick="this.parentElement.style.display='none'">&times;</span>-->
                     <img class="gallery__expanded" src="img/1.jpg">
                     
                 </div>
         </section>
         <footer class="footer">
+                <p class="footer__caption">Jak bardzo podoba Ci się popping</p>
+            <div class="form__container">
+                    <form class="footer__form">
+                        <label for="local">LocalStorage</label>
+                        <input id="local--input" class="footer__form__input" type="text" placeholder="Styl">
+                        <input id="local" class="footer__form__btn" type="submit">
+                        <button id="local--clear" class="footer__form__btn">Wyczyść</button>
+                        <p class="footer__form__paragraph local--outcome"></p>
+                    </form>
+                    <form class="footer__form">
+                        <label for="session">SessionStorage</label>
+                        <input id="session--input" class="footer__form__input" type="text" placeholder="Styl">
+                        <input id="session" class="footer__form__btn" type="submit">
+                        <button id="session--clear" class="footer__form__btn">Wyczyść</button>
+                        <p class="footer__form__paragraph session--outcome"></p>
+                    </form>
+            </div>
             <p class="footer__copyright">&copy; 2018 Krzysztof Zajączkowski</p>
         </footer>
     </div>
@@ -87,6 +118,7 @@
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/styles.js"></script>
     <script src="js/gallery.js"></script>
 </body>
 </html>

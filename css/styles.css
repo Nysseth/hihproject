@@ -1,8 +1,18 @@
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 369px) {
     .content {
-       /* MAŁE */ 
-      padding: 10vh 7vw;
-      height: 700px;
+      padding: 15vh 7vw;
+      height: 200vh;
+    }
+  
+    .content__text {
+      padding: 3vh 5vw;
+    }
+  }
+
+  @media only screen and (min-width: 370px) and (max-width: 499px) {
+    .content {
+      padding: 15vh 7vw;
+      height: 120vh;
     }
   
     .content__text {
@@ -10,11 +20,10 @@
     }
   }
   
-  @media only screen and (min-width: 700px) and (max-width: 999px) {
+  @media only screen and (min-width: 500px) and (max-width: 999px) {
     .content {
-       /* MAŁE */ 
       padding: 10vh 7vw;
-      height: 550px;
+      height: 100vh;
     }
   
     .content__text {
@@ -24,7 +33,6 @@
   
   @media only screen and (min-width: 1000px) {
     .content {
-      /* DUŻE */
       display: flex;
       padding: 15vh 5vw;
       height: 400px;
@@ -45,3 +53,17 @@
     height: 100vh;
     z-index: -1;
   }
+
+.footer__caption {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
