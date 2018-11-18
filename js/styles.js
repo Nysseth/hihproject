@@ -1,3 +1,5 @@
+
+
 var localInput = document.querySelector("#local--input");
 var sessionInput = document.querySelector("#session--input");
 
@@ -9,6 +11,22 @@ var sessionOutcome = document.querySelector(".session--outcome");
 
 var localClear = document.querySelector("#local--clear");
 var sessionClear = document.querySelector("#session--clear");
+
+var formParagraph = document.querySelector(".footer__caption");
+var forms = document.querySelectorAll(".footer__form");
+
+
+
+if (/Edge/.test(navigator.userAgent)) {
+    formParagraph.innerHTML = "Microsoft Edge/Internet Explorer nie obsługuje tej funkcji.";
+}
+else {
+    formParagraph.innerHTML = "Jak bardzo podoba Ci się popping?";
+
+    forms.forEach(function(element) {
+        element.classList.toggle("hidden");
+    });
+}
 
 localSubmit.addEventListener("click", function(e) {
     e.preventDefault();

@@ -3,6 +3,13 @@ var input = document.querySelector('.navigation__hamburger')
 var first_span = document.querySelector('.stripe__first');
 var second_span = document.querySelector('.stripe__second');
 var third_span = document.querySelector('.stripe__third');
+var header = document.querySelector('.header');
+
+
+if (!(/Edge/.test(navigator.userAgent))) {
+    header.style.height = "60vh";
+}
+
 
 input.addEventListener('click', function() {
     first_span.classList.toggle('stripe__first--active')
