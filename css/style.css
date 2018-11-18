@@ -59,6 +59,10 @@ a:link, a:visited, a:active {
   color: black;
 }
 
+.hidden {
+  display: none;
+}
+
 .jq--disabled-link:hover {
   text-decoration: line-through;
 }
@@ -131,8 +135,8 @@ a:link, a:visited, a:active {
 }
 
 .modal__content {
-  height: 30vh;
-  width: 30vw;
+  height: 40vh;
+  width: 60vw;
   background-image: linear-gradient(to bottom, rgba(23, 48, 28, 0.9), rgba(116, 79, 198, 0.8));
 }
 

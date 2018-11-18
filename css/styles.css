@@ -67,3 +67,7 @@
   justify-content: space-around;
   font-size: 1.5em;
 }
+
+.footer {
+  height: 250px;
+}

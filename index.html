@@ -8,13 +8,6 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <noscript>
-            <style type=text/css">
-                .navigation__modal {
-                text-decoration: line-through;
-                }
-            </style>
-    </noscript>
 </head>
 <body>
 
@@ -24,9 +17,9 @@
             <span class="modal__close">&times;</span>
             <form class="modal__form">
                     <label class="label--login" for="login">Login</label>
-                    <input class="input--login" type="text" name="login" placeholder="Login">
+                    <input id="login" class="input--login" type="text" name="login" placeholder="Login">
                     <label class="label--password" for="password">Password</label>
-                    <input class="input--password" type="password" name="password" placeholder="Hasło">
+                    <input id="password" class="input--password" type="password" name="password" placeholder="Hasło">
                     <div class="form__btns">
                         <button class="form__btns__btn btn--white btn--login">Login</button>
                         <button class="form__btns__btn btn--white btn--cancel">Anuluj</button>
@@ -98,12 +91,14 @@
                         <td class="table__cell" colspan="2">
                             <input class="input--text" type="text" name="comment"
                             placeholder="Wiadomość">
+                            <input id="local" class="footer__form__btn" type="submit">
                         </td>
+                        
                     </tr>
+
                 </table>
-                <p class="footer__copyright">&copy; 2018 Krzysztof Zajączkowski</p>
             </form>
-            
+            <p class="footer__copyright">&copy; 2018 Krzysztof Zajączkowski</p>
         </footer>   
     </div>
     

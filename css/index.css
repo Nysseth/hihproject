@@ -1,8 +1,7 @@
 @media only screen and (max-width: 699px) {
     .content {
-       /* MAŁE */ 
       padding: 13vh 7vw;
-      height: 800px;
+      height: 950px;
     }
   
     .content__text {
@@ -16,31 +15,30 @@
   
     .contact__table {
       padding-top: 10vh;
-      width: 400px;
+      width: 50vw;
     }
     
     .table__row {
-      width: 400px;
+      width: 50vw;
     }
     
     .table__cell {
       display: inline-block;
-      width: 200px;
+      width: 25vw;
     }
     
     .input--name, .input--mail {
-      width: 200px;
+      width: 25vw;
     }
     
     .input--text {
-      width: 400px;
+      width: 50vw;
       height: 80px;
     }
   }
   
   @media only screen and (min-width: 700px) and (max-width: 999px) {
     .content {
-       /* MAŁE */ 
       padding: 10vh 7vw;
       height: 550px;
     }
@@ -81,7 +79,6 @@
   
   @media only screen and (min-width: 1000px) {
     .content {
-      /* DUŻE */
       display: flex;
       padding: 15vh 5vw;
       height: 400px;

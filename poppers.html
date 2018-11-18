@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/poppers.css" />
     <noscript>
-        <style type=text/css">
+        <style>
             .content__photo-btn {
                 display: none;
             }
@@ -24,9 +24,9 @@
             <span class="modal__close">&times;</span>
             <form class="modal__form">
                     <label class="label--login" for="login">Login</label>
-                    <input class="input--login" type="text" name="login" placeholder="Login">
+                    <input id="login" class="input--login" type="text" name="login" placeholder="Login">
                     <label class="label--password" for="password">Password</label>
-                    <input class="input--password" type="password" name="password" placeholder="Hasło">
+                    <input id="password" class="input--password" type="password" name="password" placeholder="Hasło">
                     <div class="form__btns">
                         <button class="form__btns__btn btn--white btn--login">Login</button>
                         <button class="form__btns__btn btn--white btn--cancel">Anuluj</button>
@@ -78,11 +78,11 @@
                 <div class="content__text">
                     <span class="content__photo-btn">Pokaż zdjęcia</span>
                     <p>Boogaloo Sam to jeden z tancerzy, którzy stworzyli Popping. Zainspirował się stylem zwanym Locking i na jego podstawie stworzył nowy.</p>
-                    <img class="content__image" src="img/boogaloosam.png">
+                    <img class="content__image" src="img/boogaloosam.png" alt="Boogaloo Sam">
                 </div>
                 <div class="content__text">
                     <p>Jednym z popularniejszych tancerzy tego stylu jest <a href="https://en.wikipedia.org/wiki/Popin%27_Pete">Popin' Pete</a>, brat Boogaloo Sama, który uczył się wraz z nim.</p>
-                    <img class="content__image" src="img/popinpete.jpg">
+                    <img class="content__image" src="img/popinpete.jpg" alt="Popping Pete">
                 </div>
                 <div class="content__text">
                     <p>Pierwszą formacją tancerzy Poppingowych było utworzone przez wspomnianych braci Electric Boogaloos, które oficjalnie utworzyło i rozpromowało styl zwany Poppingiem.</p>
